@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Midias</title>
+</head>
+<body>
+    <h1>Imagens dinamicas</h1>
+    <p>Para criar imagens dinamicas, usamos o elemento <code>&lt;picture&gt;</code>. Dentro desse elemento selecionamos <code>&lt;source media='' srcste='' type=''&gt;
+    </code> para colocarmos imagens compativeis com o tamanho da tela do usuario. Por exemplo: </p>
+    <img src="WhatsApp Image 2023-09-11 at 11.19.06.jpeg" alt="Codigo HTML">
+    <p>No exemplo acima, em <code>&lt;img src''&gt;</code> foi colocado a maior imagem como padrao. </p> 
+    <p><br>É importante seguir a ordem dos <code>&lt;source&gt;</code> e que os itens mais acima sejam os menores tamanhos para <code>max-width</code> e que os seguintes sejam maiores, de forma crescente.</p>
+    <p>Exemplo pratico utilizando o codigo acima.</p>
+    <p>Tente abrir esse site em varios dispositivos diferentes ou simplesmente aumente e diminua o tamanho do seu navegador.</p>
+    <picture>
+        <source media="(max-width:750px )" srcset="imagens/foto-p.png" type="image/png">
+        <source media="(max-width:1050px )" srcset="imagens/foto-m.png" type="image/png">
+        <img src="imagens/foto-g.png" alt="Imagem flexivel">
+    </picture>
+    <h2>Audios</h2>
+    <p>1º forma de adicionar audio em um site é usando a tag e os parametros a seguir: <code>&lt;audio src='' autoplay controls&gt;</code> <br>Formatos compativeis: MP3, WAV, OGG</p>
+    <audio src="midia/Society's Dream - Mini Vandals.mp3" autoplay controls></audio>
+    <p>2º maneira é utilizando o elemento <code>&lt;source&gt;</code> e adicionar formatos alternativos caso o padrao nao funcione. Segue o codigo abaixo: </p>
+    <img src="codigoaudio.png" alt="Codigo <audio>">
+    <p>Exemplo pratico utilizando codigo acima: </p>
+    <audio preload="metadata" controls>
+        <source src="midia/Society's Dream - Mini Vandals.mp3" type="audio/mpeg">
+        <source src="midia/Society's Dream - Mini Vandals.ogg" type="audio/ogg">
+        <source src="midia/Society's Dream - Mini Vandals.wav" type="audio/wav">
+        <p>Infelimente seu navegador nao consegue reproduzir o audio. <a href="midia/Society's Dream - Mini Vandals.mp3">Cliqe aqui para baixar o arquivo MP3.</a></p>
+    </audio>
+
+</body>
+</html>

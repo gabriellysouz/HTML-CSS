@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Videos com HTML5</title>
+</head>
+<body>
+    <h1>Videos com HTML5</h1>
+    <h2>Videos hospedados internamente</h2>
+    <p>Assim como com as imagens, para colocar videos no site, que estao hospedados internamente, existem duas maneiras: <br>A 1º é utilizando a tag <code>&lt;video&gt;</code> com os parametros <code>src=''</code> para o endereço do arquivo, <code>width</code> para definir o tamanho na tela e <code>controls</code> para colocar o play no video.</p>
+    <p>Este video esta hospedado no meu proprio servidor utilizando o codigo <code>&lt;video src="midia/video-gatinho.mp4" width="200" controls&gt;</code></p>
+    <video src="midia/video-gatinho.mp4" width="200" controls></video>
+    <br>
+    <p>Na 2º maniera, assim como com as imagens, abrange mais formatos, facilitando a experiencia do usuario e aumentando a compatilibilidade com o mesmo. Atenção na ordem dos sources. O codigo é lido "se o primeiro nao der certo, tenta o segundo... e assim sucessivamente". Nesse caso, o padrao (mais leve) sempre é o primeiro valor. </p>
+    <p>O exemplo abaixo foi feito utilizando o seguinte codigo: </p>
+    <img src="codigovideo.png" width="400" alt="codigo">
+    <p>O parametro poster permite colocar uma imagem de descanso antes do play.</p>
+    <br>
+    <video width="200" poster="imagens/gato.png" controls>
+        <source src="midia/video-gatinho.mp4" type="video/mp4">
+        <source src="midia/Video-Gatinho.mkv" type="video/mp4">
+        <source src="midia/Video-Gatinho.webm" type="video/webm">
+        <p>Seu navegador nao tem compatibilidade com reproduçao de videos</p>
+    </video>
+    <h2>Videos de hospedagem externa</h2>
+    <p>É possivel colocar videos no site que estao hospedados em outro servidor, como por exemplo o YouTube e Vimeo.</p>
+    <p>Para adicionar é facil, utilizamos a opção 'incorporar' na opção de compartilhar do YouTube ou Vimeo. Depois é só copiar o codigo gerado e colar no nosso documento HTML.</p>
+    <img src="incorporar.png" width="300" alt="">
+    <img src="incorporado.png" width="250" alt="">
+    <h3>YouTube</h3>
+    <iframe width="560" height="315" src="https://www.youtube.com/embed/w0ffwDYo00Q?si=sOS2FjKoEhB8HOnr" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+    <h3>Vimeo</h3>
+    <iframe src="https://player.vimeo.com/video/73552530?h=4f7e604b0d" width="560" height="315" frameborder="0" allow="autoplay; fullscreen; picture-in-picture" allowfullscreen></iframe>
+</body>
+</html>

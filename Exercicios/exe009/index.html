@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Listas</title>
+</head>
+<body>
+    <h1>Trabalhando com Listas</h1>
+    <h2>Listas ordenadas </h2>
+    <p>Listas ordenadas sao as que a ordem da lista importa, por exemplo,passo-a-passo, listas de carros mais caros etc. Para isso usamos a tag &lt;ol&gt; e cada item é identificado pela tag &lt;li&gt;.</p>
+    <p>É possivel personalizar o tipo de marcador usando o parametro type: &lt;ol type=""&gt; e personalizar o inicio usando o parametro start.</p>
+    <ol type="1">
+        <li>Acordar</li>
+        <li>Ligar para o Joao</li>
+        <li>Tomar cafe</li>
+        <li>Escovar os dentes</li>
+        <li>Ir para faculdade</li>
+        <li>Almoçar</li>
+        <li>Ir para o trabalho</li>
+    </ol>
+    <h2>Listas nao ordenadas </h2>
+    <p>Sao aquelas onde a ordem nao é importante, por exemplo lista de compras.</p>
+    <p>Nessas listas tambem é possivel personalizar o marcador usando type. Temos as opçoes: disc, circle e square </p>
+    <ul type="square">
+        <li>Tomate</li>
+        <li>Pao</li>
+        <li>Queijo</li>
+        <li>Arroz</li>
+        <li>Feijao</li>
+    </ul>
+    <h2>Listas Mista 1.0</h2>
+    <h3>Linguagens favoritas do Guanabara</h3>
+    <ol>
+        <li>Antigas</li>
+        <ol>
+            <li>Clipper</li>
+            <li>Visual Basic</li>
+            <li>Fortran</li>
+            <li>Delphi</li>
+        </ol>
+        <li>Novas</li>
+        <ol>
+            <li>PHP</li>
+            <li>Python</li>
+            <li>JavaScript</li>
+            <li>Kotlin</li>
+        </ol>
+    </ol>
+    <h3>Jogos favoritos do Guanabara</h3>
+    <ol>
+        <li>Nintendinho</li>
+        <ul type="square">
+            <li>Mario Bross</li>
+            <li>Ninja Galden</li>
+        </ul>
+        <li>Super Nintendo</li>
+        <ul type="square">
+            <li>Mario</li>
+            <ul type="circle">
+                <li>Mario Bross 3</li>
+                <li>Mario: Los Levels</li>
+            </ul>
+            <li>Donkey Kong</li>
+        </ul type=>
+        <li>PlayStation</li>
+        <ul type="square">
+            <li>Final Fantasy</li>
+            <li>Castlevania</li>
+        </ul>
+    </ol>
+    <h2>Lista de definiñçoes</h2>
+    <p>É possivel criar lista de definição usando &lt;dt&gt; para definir o termo e &lt;dd&gt; para descrever. Exemplo: </p>
+    <ol>
+        <dt>Termo - HTML</dt>
+        <dd>Descriçao - Linguagem de marcação para criaçao do conteudo de um site </dd>
+        <dt>CSS</dt>
+        <dd>Liguagem de marcação para criação do design de um site</dd>
+        <dt>JavaScript</dt>
+        <dd>Linguagem de programação para criação de interatividade de um site</dd>
+    </ol>
+</body>
+</html>

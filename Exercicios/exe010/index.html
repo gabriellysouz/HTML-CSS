@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Trabalhando com links</title>
+</head>
+<h1>Usando links externos</h1>
+<p>É possivel colocar links que direcionam para outros sites (externo) usando a tag ancora: <code>&lt;a&gt;</code>. É recomendavel utilizar a target _blank (<code>&lt;a href="https://github.com/gustavoguanabara" target="_blank" rel="external&gt;</code>) para que o site linkado nao sobreponha o seu. Segue exemplo: </p>
+<p>Voce pode acessar meu <a href="https://github.com/gustavoguanabara" target="_blank" rel="external">repositorio publico no GitHub</a></p>
+<p>Voce tambem pode acessar o meu <a href="https://youtube.com/cursoemvideo/">canal gratuito no YouTube</a></p>
+<h2>Usando links internos</h2>
+<p>Link interno faz relação com outra pagina que esta no nosso servidor que diz respeito ao nosso proprio site. Para isso, a proxima pagina precisa estar na mesma pasta da pagina principal. </p>
+<p>Nesse exemplo para acessar a segunda pagina, foi criado um segundo arquivo com o nome "pag002" e feita a seguinte ancora: <code>&lt;a href="pag002.html" rel="next"&gt;</code> </p>
+<p>Ja para a pagina de noticias, foi criado uma nova pasta chamada "noticias" e dentro dessa pasta, o arquivo "pag003". Foi usado entao o caminho <code>&lt;a href="noticias/pag003.html" rel="next"&gt;</code></p>
+<p>Esta é a primeira pagina do site. Se voce quiser, pode acessar tambem a minha <a href="pag002.html" rel="next">segunda pagina</a></p>
+<p>Voce tambem pode acessar a nossa <a href="noticias/pag003.html" rel="next">pagina de noticias</a></p>
+<p>Como a pagina "pag003" <strong>se encontra em outra pasta</strong>, usamos o caminho <code>&lt;a href="../index.html"&gt;</code> para retornar a pagina "index" (principal).</p>
+<h2>Links para downloads</h2>
+<ul>
+    <li><a href="livro/Comp_Pass_Lucas.pdf" download="meulivro.pdf" type="application/pdf">Baixar o livro em PDF</a></li>
+    <li><a href="livro/Comp_Pass_Lucas.zip" download="meulivro.zip" type="application.zip">Livro compactado em ZIP</a></li>
+</ul>
+<body>
+    
+</body>
+</html>

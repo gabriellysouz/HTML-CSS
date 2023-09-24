@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Grouping Tags</title>
+    <style>
+        body{
+            font-family: sans-serif;
+            background-color: dimgray;
+            margin: 0px;
+        }
+        header{
+            background-color: whitesmoke;
+            padding: 10px;
+            margin: 10px;
+            text-align: center;
+        }
+        nav{
+            background-color: rgb(197, 192, 192);
+            padding: 3px;
+            text-align: center;
+            box-shadow: 1px 1px 1px black;
+        }
+        nav > a{
+            text-decoration: none;
+            font-weight: bold;
+            color: white;
+            margin-right: 30px;
+        }
+        nav > a:hover{
+            text-decoration: underline;
+        
+        }
+        main{
+            background-color: whitesmoke;
+            padding: 10px;
+            margin: 10px;
+            text-align: justify;
+            border-radius: 20px 10px 15px 40px ;
+        }
+        article{
+            background-color: lightgray;
+            padding: 5px;
+        }
+        article > aside{
+            background-color: rgb(152, 152, 152);
+            text-align: right;
+        }
+        footer{
+            color: white;
+            background-color: black;
+            text-align: center;
+            padding: 2px;
+        }
+        footer > p {
+            margin: 0px;
+        }
+
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Meu site</h1>
+        <nav>
+            <a href="#">Link</a>
+            <a href="#">Link</a>
+            <a href="#">Link</a>
+            <a href="#">Link</a>
+            <a href="#">Link</a>
+        </nav>
+    </header>
+    <main>
+        <section id="assuntos">
+            <p>Esportes Politica Tecnologia</p>
+        </section>
+        <section id="noticias">
+            <article>
+                <h2>Noticia sobre o Brasil</h2>
+                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ea delectus natus excepturi veniam quos voluptate hic iure iste doloremque nihil, sit cumque dolorem impedit sunt maxime, facilis incidunt optio tempore.</p>
+                <aside>
+                    <p>Artigo escrtio por Jose da Silva</p>
+                </aside>
+            </article>
+            <article>
+
+            </article>
+        </section>
+    </main>
+    <footer>
+        <p>Desenvolvido por CursoemVideo</p>
+    </footer>
+</body>
+</html>

@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Outras Formataçoes</title>
+</head>
+<body>
+    <h1>Outras Formatações e pre formatações</h1>
+    <h2>Codigo-fonte</h2>
+    <p>Usamos o &lt;code&gt; para deixar a leitura de codigos mais acessivel, exemplo: <br>O comando <code>document.getElementById('test')</code>  é escrito em JavaScript</p>
+    <pre>
+    <code>
+num = int(input('Digite um numero: '))
+if num % 2 == 0:
+    print(f'O numero {num} é PAR')
+else:
+    print(f'O numero {num} é IMPAR')
+    </code>
+    </pre>
+    <p>O &lt;pre&gt; se guia pela identação do documento HTML. </p>
+    <h2>Citaçoes</h2>
+    <p>Para citaçoes sem quebras, usamos &lt;q&gt;, por exemplo:</p>
+    <p>Como diria o pai de um amigo: <q>o computador é um burro muito rapido</q></p>
+    <p><br>Ja para citaçoes completas, usamos &lt;blockquote cite=""&gt;. Exemplo:</p>
+    <p>Segundo Jeff Noble, no seu livro HTML para leigos:</p>
+    <blockquote cite="https://www.google.pt/books/edition/HTML_XHTML_and_CSS_For_Dummies/oWkeeH6ik1MC?hl=en&gbpv=1&dq=html+para+leigos&printsec=frontcover">
+            A diferença entre elementos inline e um bloco de texto é importante. Os elementos HTML neste capitulo descrevem os blocos de texto.
+    </blockquote>
+    <h2>Abreviaçoes</h2>
+    <p>É possivel escrever por extenso as abreviaçoes usando &lt;abbr tittle=""&gt;</p>
+    <p>Estou estudando <abbr title="Hypertext markup language">HTML</abbr> e <abbr title="cascading style sheets">CSS</abbr>. Estou adorando!</p>
+    <h2>Texto invertido</h2>
+    <p>Como o proprio titulo diz, é possivel escrever invertido usando a tag &lt;bdo dir="rtl"&gt;</p>
+    <p><bdo dir="rtl">Estou aprendendo a criar coisas em HTML</bdo></p>
+</body>
+</html>
