@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Teste Imagem de Fundo</title>
+    <style>
+        body{
+            height: 97vh;
+            background-color: black;
+            background-image: url(imagens/wallpaper002.jpg);
+            background-position: center center ;
+            background-repeat: no-repeat;
+            background-size: cover;
+        }
+        main {
+            background-color: whitesmoke;
+            width: 400px;
+            padding: 10px;
+            margin: auto;
+            border: 1px solid darkblue;
+            border-radius: 10px;
+        }
+    </style>
+</head>
+<body>
+    <main>
+        <h1>Teste Imagem de Fundo</h1>
+        <p>Nesse exercicio vimos o <code>background-size</code>.
+        <br>Existem varias formas de definir o tamanho da imagem de fundo por exemplo por tamanho fixo utilizando pixels.</p>
+        <p>Nesse site em questao, vimos as opçoes <code>auto contain</code> e <code>cover</code>.</p>
+        <p>Na opçao <code>auto</code> a imagem é redimensionada para ser exibida na área disponível, mesmo que ela fique distorcida</p>
+        <p>Na opçao <code>contain</code> a imagem é redimensionada para encaixar no espaço disponível sem que haja cortes</p>
+        <p>Na opção <code>cover</code> a imagem é redimensionada para encaixar na área disponível, entretanto, ela não será distorcida. Se a área não for proporcional ao aumento ou redução da imagem, a parte excedente não será exibida</p>
+    </main>
+</body>
+</html>
