@@ -19,6 +19,7 @@ header h1{
     font-family: 'Passion One';
     font-weight: normal;
     padding-top: 50px;
+    font-variant: small-caps;
     font-size: 8vw;
 }
 header p {
@@ -29,6 +30,7 @@ header p {
 p > a {
     color: white;
     text-decoration: none;
+    font-weight: bold;
 }
 p>a:hover{
     text-decoration: underline;
@@ -47,22 +49,19 @@ section#girassol{
     background-attachment: fixed;
     background-position: right center;
     padding: 50px;
+    box-shadow: inset 6px 6px 13px 0px rgba(0, 0, 0, 0.416);
 }
 
 section#girassol > p{
-    background-color: rgba(0, 0, 0, 0.503);
+    background-color: rgba(0, 0, 0, 0.473);
     color: white;
-    max-width: 250px;
+    width: 250px;
     padding-left: 20px;
-    padding-bottom: 20px;
-    box-shadow: inset 6px 6px 13px 0px rgba(0, 0, 0, 0.473);
-    
+    padding-bottom: 20px; 
 }
 
 .branco{
-    padding-left: 50px;
-    
-    
+    padding-left: 50px;    
 }
 section#livro{
     background-image: url(imagens/background002.jpg);
@@ -76,7 +75,7 @@ section#livro{
 section#livro > p{
     background-color: rgba(0, 0, 0, 0.503);
     color: white;
-    max-width: 250px;
+    width: 250px;
     padding-left: 20px;
     padding-bottom: 20px;
 }
