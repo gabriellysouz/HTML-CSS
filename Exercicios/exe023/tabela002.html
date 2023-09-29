@@ -9,13 +9,31 @@
             width: 400px;
             font-family: Arial, Helvetica, sans-serif;
             border-collapse: collapse;
+            position: relative;
+        }
+        thead > tr > th {
+            position: sticky;
+            background-color: rgb(56, 56, 56);
+            top: -1px;
+        }
+
+        caption{
+            padding: 10px;
+            background-color: lightgrey;
+            font-weight: bold;
+            border: 1px solid black;
         }
         thead, tfoot{
             text-align: left;
-            background-color: gray;
+            background-color: rgb(56, 56, 56);
             color: white;
         }
-
+        tbody > tr:nth-child(even){
+            background-color: lightgray;
+        }
+        tbody > tr:nth-child(odd){
+            background-color: white;
+        }
         td, th{
             border: 1px solid black;
             padding: 6px;
@@ -28,6 +46,7 @@
 <body>
     <h1>Tabelas Grandes</h1>
     <table>
+        <caption>Populaçao das Unidades Federativas</caption>
         <thead>
             <tr>
                 <th scope="col">Estado</th>
