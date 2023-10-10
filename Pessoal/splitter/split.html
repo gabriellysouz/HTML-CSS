@@ -12,16 +12,44 @@
     </header>
     <main>
         <section class="container">
-            <div class="valor" id="nometip">Amont Tip <br> /personal</div>
+            <div class="valor" id="nometip">Amount Tip <br> /personal</div>
             <div class="valor" id="valortip">$0.00</div>
             <div class="valor" id="nometotal">Total <br>/personal</div>
             <div class="valor" id="valortotal">$0.00</div>
-            <div class="botao">
-                Reset
+            <div class="botao" onclick="onCalculate()">
+                See
             </div>
         </section>
-
-
+        <section class="cont2">
+            <div class="conttotal">
+                <p class="bill">Bill</p>
+                <div class="billnum">
+                    <p>$</p>
+                    <input type="number" name="inputbill" id="inputbill">
+                    <p>0</p>
+                </div>
+            </div>
+            <div class="conttip">
+                <p id="seletip">Select Tip %</p>
+                <div class="conttip2">
+                    <div class="tip" id="cinco" onclick="onTipSelected(this.id, 5)">5%</div>
+                    <div class="tip" id="dez" onclick="onTipSelected(this.id, 10)">10%</div>
+                    <div class="tip" id="quinze" onclick="onTipSelected(this.id, 15)">15%</div>
+                    <div class="tip" id="vintecinco" onclick="onTipSelected(this.id, 25)">25%</div>
+                    <div class="tip" id="cinquenta" onclick="onTipSelected(this.id, 50)">50%</div>
+                    <div class="tip" id="custom" onclick="custom()" id="custom"> <input type="number" name="inputcustom" id="inputcustom">Custom</div>
+                </div>
+            </div>
+            <div class="pessoatotal">
+                <p class="numpessoas">Number of people</p>
+                <div class="pessoas">
+                    <p>&</p>
+                    <input type="number" name="inputpessoa" id="inputpessoa">
+                    <p>0</p>
+                </div>
+            </div>
+        </section>
     </main>
+    <script src="script.js"></script>
 </body>
 </html>
