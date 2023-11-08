@@ -1,0 +1,327 @@
+:root{
+    --rosa-um: #F2798F;
+    --roxo-um: #BF60B9;
+    --cinza: #D2D6D9;
+    --laranja: #F27F3D;
+    --rosa-escuro:#A66060;
+    --preto: black;
+    --branco:white;
+}
+
+*{
+    margin: 0;
+    box-sizing: border-box;
+    padding: 0;
+    outline: 0;
+}
+body{
+    font-family:  sans-serif;
+    width: 100%;
+    height: 100vh;
+    position: relative;
+
+    background-color: var(--cinza);
+}
+button{
+    font-family: sans-serif ;
+    cursor: pointer;
+}
+a{
+    text-decoration: none;
+    cursor: pointer;
+}
+
+header{
+    width: 100%;
+}
+
+.header-content{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+i{
+    color: var(--rosa-escuro);
+}
+.header-icon{
+    display: flex;
+    gap: 14px;
+}
+
+.header-icon i:hover{
+    color: var(--rosa-um);
+}
+
+.header-button{
+    border: 1px solid var(--rosa-escuro);
+    padding: 8px 24px;
+    border-radius: 4px;
+    color: var(--branco);
+    background-color: var(--rosa-escuro);
+    transition: background-color 0.5s;
+}
+.header-button:hover{
+    border: 1px solid var(--rosa-um);
+    background-color: var(--rosa-um);
+}
+.header-logo{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 15px;
+}
+@media screen and (max-width:768px){
+    .header-content{
+        width: 100%;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        i{
+            margin-top: 16px;
+            font-size: 34px;
+        }
+    }
+    .header-logo img{
+        width: 160px;
+        margin-top: 46px;
+    }
+    .header-button{
+        display: none;
+    }
+}
+.container {
+    max-width: 1440px;
+    margin: 0 auto;
+    padding: 0 20px;
+  }
+  
+  .bg-home {
+    position: relative;
+  }
+  
+  .bg-home::before {
+    content: " ";
+    display: block;
+    position: absolute;
+    background-image: linear-gradient(to bottom, #a65d5d36  , var(--cinza) ), url("../landingcrochet/imagens/imagemdecima.jpg");
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: 50% 0;
+    opacity: 0.9;
+  }
+  .hero {
+    color: #fff;
+    min-height: 80vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 14px;
+  }
+  .hero h1 {
+    text-align: center;
+    line-height: 150%;
+    max-width: 940px;
+    font-size: 40px;
+  }
+  .hero p {
+    text-align: center;
+    margin: 1px 0;
+  }
+  
+  .button-contact {
+    padding: 14px 28px;
+    color: #fff;
+    background-color: var(--rosa-escuro);
+    border: 0;
+    font-size: 18px;
+    font-weight: 500;
+    margin: 14px 0;
+  }
+  @media screen and (max-width: 768px) {
+    .hero {
+      min-height: 30vh;
+    }
+    .hero h1 {
+      font-size: 35px;
+      padding: 0 14px;
+      width: 100%;
+    }
+    .hero p {
+      font-size: 14px;
+    }
+  }
+  .about {
+    background-color: var(--cinza);
+    overflow: hidden;
+    color: var(--preto);
+  }
+  
+  .about-content {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 14px;
+    padding: 34px 14px 64px 14px;
+  }
+  .about-content img {
+    max-width: 370px;
+    margin-left: 150px;
+    border-radius: 6px;
+  }
+  
+  .about-content div {
+    flex: 1;
+  }
+  
+  .about-description h2 {
+    font-size: 38px;
+    margin-bottom: 24px;
+  }
+  .about-description p {
+    margin-bottom: 14px;
+    line-height: 150%;
+  }
+  @media screen and (max-width: 768px) {
+    .about-content {
+      flex-direction: column;
+    }
+    .about-content img {
+        max-width: 370px;
+        margin-left: 10px;
+        border-radius: 6px;
+      }
+  }
+  .services {
+    background-color: #fff;
+    color: #232224;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 54px 14px;
+  }
+  
+  .services-content h2 {
+    text-transform: uppercase;
+    text-align: center;
+    font-size: 38px;
+    margin-bottom: 14px;
+  }
+  
+  .services-content p {
+    line-height: 150%;
+    margin-bottom: 14px;
+    text-align: center;
+    max-width: 780px;
+  }
+  
+  .haircuts {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 16px;
+    padding: 0px 44px 34px 44px;
+  }
+  
+  .haircut {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0px -1px 17px -4px rgba(0, 0, 0, 0.452);
+    overflow: hidden;
+  }
+  .haircut img {
+    width: 100%;
+    max-width: 354px;
+    transition: transform 0.2s;
+  }
+  
+  .haircut img:hover {
+    transform: scale(1.2);
+    z-index: 1;
+  }
+  
+  .haircuts-info {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    padding: 15px;
+    background-color: #fff;
+    z-index: 2;
+  }
+  
+  .haircuts-info button {
+    color: #fff;
+    background-color: var(--rosa-escuro);
+    padding: 4px 8px;
+    border: 0;
+    border-radius: 4px;
+    cursor: default;
+  }
+  
+  @media screen and (max-width: 768px) {
+    .haircuts {
+      flex-direction: column;
+    }
+  }
+  .footer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 54px 0;
+    gap: 24px;
+    color: #fff;
+  }
+  
+  .footer-icons {
+    display: flex;
+    gap: 10px;
+  }
+
+  .services p{
+    padding: 20px;
+  }
+  
+  .bnt-wtt {
+    position: fixed;
+    bottom: 24px;
+    right: 24px;
+    z-index: 3;
+  }
+  .bnt-wtt img {
+    max-width: 70px;
+    transition: transform 0.4s;
+  }
+  .bnt-wtt img:hover {
+    transform: scale(1.1);
+  }
+  
+  .bnt-wtt .tooltip-text {
+    visibility: hidden;
+    position: absolute;
+    width: 167px;
+    top: 8px;
+    left: -174px;
+    padding: 4px;
+    border-radius: 4px;
+    background-color: #232224;
+    color: #fff;
+    text-align: center;
+    opacity: 0;
+    transition: opacity 0.3s;
+  }
+  
+  .bnt-wtt:hover .tooltip-text {
+    visibility: visible;
+    opacity: 1;
+  }
+  
