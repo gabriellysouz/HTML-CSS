@@ -1,3 +1,6 @@
+@import url('https://fonts.googleapis.com/css2?family=Alex+Brush&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Bad+Script&display=swap');
+
 :root{
     --rosa-um: #F2798F;
     --roxo-um: #BF60B9;
@@ -15,7 +18,7 @@
     outline: 0;
 }
 body{
-    font-family:  sans-serif;
+    font-family: 'Bad Script',  sans-serif;
     width: 100%;
     height: 100vh;
     position: relative;
@@ -68,7 +71,9 @@ i{
     display: flex;
     align-items: center;
     justify-content: center;
-    margin-top: 15px;
+    margin-top: 10px;
+    margin-left: 50px;
+
 }
 @media screen and (max-width:768px){
     .header-content{
@@ -92,7 +97,7 @@ i{
 .container {
     max-width: 1440px;
     margin: 0 auto;
-    padding: 0 20px;
+    padding: 23px 20px;
   }
   
   .bg-home {
@@ -128,6 +133,10 @@ i{
     line-height: 150%;
     max-width: 940px;
     font-size: 40px;
+    color: var(--preto);
+    font-size: 4em;
+    margin-bottom: 50px;
+    font-family: 'Alex Brush', sans-serif;
   }
   .hero p {
     text-align: center;
@@ -141,7 +150,8 @@ i{
     border: 0;
     font-size: 18px;
     font-weight: 500;
-    margin: 14px 0;
+    margin: 30px 15px;
+    border-radius: 4px;
   }
   @media screen and (max-width: 768px) {
     .hero {
@@ -171,12 +181,11 @@ i{
   }
   .about-content img {
     max-width: 370px;
-    margin-left: 150px;
     border-radius: 6px;
   }
   
   .about-content div {
-    flex: 1;
+    flex: 2;
   }
   
   .about-description h2 {
@@ -279,7 +288,11 @@ i{
     justify-content: center;
     padding: 54px 0;
     gap: 24px;
-    color: #fff;
+    color: var(--preto);
+  }
+
+  .copyright{
+    font-size: 0.8em;
   }
   
   .footer-icons {
@@ -298,7 +311,7 @@ i{
     z-index: 3;
   }
   .bnt-wtt img {
-    max-width: 70px;
+    max-width: 50px;
     transition: transform 0.4s;
   }
   .bnt-wtt img:hover {
